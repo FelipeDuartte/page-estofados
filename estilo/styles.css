@@ -1,6 +1,6 @@
 /* Estilos Globais */
 body {
-    background-color: #e3f2fd; /* Azul claro suave */
+    background-color: #e3f2fd;
     color: #333;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 .section:last-child {
-    border-bottom: none; /* Remove borda inferior da última seção */
+    border-bottom: none;
 }
 
 /* Layout das Colunas */
@@ -23,7 +23,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .section .col-lg-6 {
@@ -32,9 +32,10 @@ body {
     align-items: center;
     text-align: center;
     flex: 1 1 45%;
+    max-width: 45%;
 }
 
-/* Títulos da Seção */
+/* Títulos e Parágrafos */
 .section h2 {
     color: #0056b3;
     font-size: 2.2rem;
@@ -43,7 +44,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Parágrafos da Seção */
 .section p {
     font-size: 1.1rem;
     color: #444;
@@ -52,7 +52,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Imagens das Seções */
+/* Imagens e Subtítulos */
 .section .col img {
     max-width: 100%;
     border-radius: 12px;
@@ -60,7 +60,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Subtítulos das Seções */
 .section .col h4 {
     font-family: 'Poppins', sans-serif;
     color: #0056b3;
@@ -146,6 +145,7 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     z-index: 0;
+    pointer-events: none;
 }
 
 .hero-content {
@@ -166,26 +166,20 @@ body {
 .hero p {
     font-size: 1.25rem;
     margin-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
     color: #f8f9fa;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     animation: fadeIn 3s ease-out;
-    opacity: 0;
+    opacity: 1 !important;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 .hero a {
     font-weight: bold;
-    text-transform: uppercase;
     padding: 15px 35px;
     border-radius: 30px;
-    background-color: #25D366;
+    background-color: #25d366;
     transition: background-color 0.3s ease, transform 0.2s ease;
     font-size: 1.2rem;
-    text-decoration: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 4s ease-out;
 }
 
 .hero a:hover {
@@ -193,104 +187,23 @@ body {
     transform: scale(1.05);
 }
 
-/* Benefícios */
-#beneficios {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-}
-
-#beneficios .row {
-    display: flex;
-    flex-wrap: nowrap; /* Evita quebra de linha */
-    justify-content: center;
-    gap: 20px; /* Espaçamento entre os cards */
-    overflow-x: auto; /* Garante que não quebre em telas menores */
-    padding-bottom: 10px; /* Espaço extra para rolagem suave */
-}
-
-#beneficios .col-md-4 {
-    flex: 1; /* Mantém os itens com largura igual */
-    min-width: 280px; /* Evita que fiquem muito pequenos */
-}
-
-#beneficios .card {
-    border: none;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-#beneficios .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-#beneficios i {
-    font-size: 3rem;
-    color: #007bff;
-}
-
-#beneficios h4 {
-    font-weight: 600;
-    margin-top: 15px;
-}
-
-#beneficios p {
-    color: #6c757d;
-    line-height: 1.5;
-}
-
-/* Animações */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animated-text {
-    animation: textEffect 4s ease-in-out infinite;
-}
-
-@keyframes textEffect {
-    0% {
-        color: #fff;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-    }
-    50% {
-        color: #007bff;
-        text-shadow: 2px 2px 15px rgba(0, 123, 255, 0.6);
-    }
-    100% {
-        color: #fff;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-    }
-}
-
-/* Media Queries para Responsividade */
+/* Responsividade */
 @media (max-width: 992px) {
     .section .row {
         flex-direction: column;
         gap: 20px;
     }
-    
     .section .col-lg-6 {
         flex: 1 1 100%;
+        max-width: 100%;
     }
-
     .hero h1 {
         font-size: 2.5rem;
     }
-
     .hero p {
         font-size: 1rem;
         margin-bottom: 20px;
     }
-
     .hero a {
         padding: 12px 25px;
         font-size: 1rem;
@@ -298,22 +211,12 @@ body {
 }
 
 @media (max-width: 768px) {
-    .navbar-nav .nav-link {
-        font-size: 1rem;
-        padding: 8px 12px;
+    .section .row {
+        flex-direction: column;
+        gap: 20px;
     }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 0.95rem;
-        margin-bottom: 15px;
-    }
-
-    .hero a {
-        padding: 10px 20px;
-        font-size: 1rem;
+    .section .col-lg-6 {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
