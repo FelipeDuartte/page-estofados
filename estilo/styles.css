@@ -1,3 +1,4 @@
+@charset "UTF 8";
 /* Estilos Globais */
 body {
     background-color: #e3f2fd;
@@ -25,7 +26,7 @@ body {
 .navbar-nav .nav-link:hover {
     color: #007bff;}
 
-.navbar-nav .nav-link:after {
+.navbar-nav .nav-link:not(.contato-link):after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -36,11 +37,23 @@ body {
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;}
-
-.navbar-nav .nav-link:hover:after {
+    
+.navbar-nav .nav-link:not(.contato-link):hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;}
 
+.navbar-nav .contato-link {
+    color: #25d366 !important;
+    font-weight: 700;
+    border: 2px solid #25d366;
+    border-radius: 30px;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;}
+
+.navbar-nav .contato-link:hover {
+    background-color: #25d366;
+    color: #fff !important;}
+    
 /* Hero Section */
 .hero {
     position: relative;
@@ -106,120 +119,51 @@ body {
 .section:last-child {
     border-bottom: none;}
 
-/* Layout das Colunas */
-.section .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;}
+#carousel-servicos .card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;}
 
-.section .col-lg-6 {
-    flex: 1 1 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-        background: #E3F2FD;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-        transition: transform 0.3s ease-in-out;}
-
-.section .col-lg-6:hover {
+#carousel-servicos .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);}
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);}
 
-.section .col-lg-6:not(:nth-child(2n)) {
-    border-right: 2px solid rgba(0, 0, 0, 0.08);}
+#carousel-servicos .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #339af0;}
 
-.section .col-lg-6 img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;}
+.custom-arrow {
+    font-size: 2.5rem;
+    color: #007bff;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;}
 
-.section .col-lg-6:hover img {
-    transform: scale(1.02);}
-
-/* Títulos e Parágrafos */
-.section h2 {
-    color: #0056b3;
-    font-size: 2.2rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    margin-bottom: 20px;}
-
-.section p {
-    font-size: 1.1rem;
-    color: #444;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    margin-bottom: 20px;}
-
-/* Imagens e Subtítulos */
-.section .col img {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;}
-
-.section .col h4 {
-    font-family: 'Poppins', sans-serif;
-    color: #0056b3;
-    font-weight: 600;
-    margin-top: 10px;}
-
-/* Botões */
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-transform: uppercase;}
-
-.btn-primary:hover {
+.custom-arrow:hover {
     background-color: #0056b3;
-    border-color: #004494;}
+    color: #fff;}
 
-#beneficios .row {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;}
+.left-arrow {
+    margin-left: -50px;}
 
-#beneficios .col {
-    flex: 1;
-    max-width: 33%;
-    text-align: center;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease-in-out;}
+.right-arrow {
+    margin-right: -50px;}
 
-#beneficios .col:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);}
-
-    /* Seção Por que nos escolher */
 /* Seção Por que nos escolher */
 #porque-nos-escolher {
     background-color: #FF6F61;
     padding: 80px 0;
-    text-align: center;
-}
+    text-align: center;}
 
 #porque-nos-escolher h2 {
     font-size: 2.5rem;
     color: #3C3C3C !important;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-}
+    font-weight: 700;}
 
 .icon-box {
     background-color: #FFFFFF;
@@ -227,49 +171,41 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
     transition: transform 0.3s ease-in-out;
-    text-align: left;
-}
+    text-align: left;}
 
 .icon-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-}
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);}
 
 .icon-box i {
     font-size: 3rem;
-    color: #334E68;
-}
+    color: #334E68;}
 
 .icon-box h4 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #FF6F61;
-    margin-top: 20px;
-}
+    margin-top: 20px;}
 
 .icon-box p {
     font-size: 1rem;
     color: #3C3C3C;
     line-height: 1.6;
-    margin-top: 10px;
-}
+    margin-top: 10px;}
 
 .img-container {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);}
 
 .img-container img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease-in-out;
-}
+    transition: transform 0.3s ease-in-out;}
 
 .img-container:hover img {
-    transform: scale(1.05);
-}
+    transform: scale(1.05);}
 
 .img-container .overlay {
     position: absolute;
@@ -282,46 +218,77 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
-}
+    transition: opacity 0.3s ease;}
 
 .img-container:hover .overlay {
-    opacity: 1;
-}
+    opacity: 1;}
 
 .img-container .overlay p {
     font-size: 1.5rem;
     color: white;
     text-align: center;
-    font-weight: bold;
-}
+    font-weight: bold;}
 
+.hover-shadow {
+    transition: all 0.3s ease-in-out;}
+  
+.hover-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);}
+
+  /* Seção Dicas e artigos */
+  #artigos-dicas .card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+    height: 100%;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    background-color: #ffffff;}
+  
+  #artigos-dicas .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 123, 255, 0.2);
+    border-color: #007bff;}
+  
+  #artigos-dicas a.text-decoration-none {
+    text-decoration: none !important;
+    color: inherit;
+    display: block;
+    height: 100%;}
+  
+  #artigos-dicas .card-title,
+  #artigos-dicas .card-text {
+    transition: color 0.3s ease;}
+  
+  #artigos-dicas a:hover .card-title {
+    color: #0056b3;}
+
+  .contact-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #007bff;}
+  
+  .contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.15);}
+
+/* footer */
+  footer p {
+    margin: 0;
+    letter-spacing: 0.5px;}
+
+    /* Resposive */
 @media (max-width: 768px) {
+
+    .left-arrow,
+    .right-arrow {
+        margin: 0;}
+
+    #carousel-servicos .carousel-inner .row {
+        flex-direction: column;}
+
+    #carousel-servicos .col-md-4 {
+        max-width: 100%;
+        margin-bottom: 20px;}
+
     #porque-nos-escolher .row {
-        flex-direction: column;
-    }
-
-    .section .row {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .section .col-lg-6 {
-        flex: 1 1 100%;
-        max-width: 100%;
-        padding-bottom: 20px;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .section .col-lg-6:last-child {
-        border-bottom: none;
-    }
-
-    #beneficios .row {
-        flex-direction: column;
-    }
-
-    #beneficios .col {
-        max-width: 100%;
-        padding: 15px;
-    }
+        flex-direction: column;}
 }

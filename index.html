@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços de Estofados</title>
     <!-- Links bootstrap5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <!-- Links locais -->
     <link rel="shortcut icon" href="imagem/FD.clean-icon.png" type="image/x-icon">
@@ -16,118 +16,117 @@
 <body>
     <!-- navegação -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="imagem/FD.clean.png" alt="image-FDclean"> FD.CLEAN</a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="imagem/FD.clean.png" alt="image-FDclean"> FD. Estofados</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#estofados">Limpeza Estofados</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#impermeabilizacao">Impermeabilização</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#carros">Carros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato <i class="bi bi-whatsapp"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carros">Limpeza Automotiva</a></li>
+                    <li class="nav-item me-5"><a class="nav-link" href="#impermeabilizacao">Impermeabilização</a></li>
+                    <li class="nav-item me-4"><a class="nav-link contato-link" href="#contato">Contato <i class="bi bi-whatsapp"></i></a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    
     <!-- Principal Section -->
     <section class="hero d-flex align-items-center justify-content-center text-center">
         <div class="container">
             <h1 class="display-4 fw-bold text-white">Transforme seu ambiente com limpeza de qualidade!</h1>
-            <p class="lead text-white mb-4">Garantimos sofás, colchões, tapetes e estofados automotivos impecáveis e protegidos!</p>
+            <p class="lead text-white mb-4">Garantimos sofás, colchões, tapetes, estofados automotivos impecáveis, protegidos e com impermeabilização de alta qualidade!</p>
             <a href="#colchoes" class="btn text-white btn-lg"><i class="bi bi-whatsapp"></i> Fale conosco!</a>
         </div>
     </section>
-
-    <main class="container mt-5 pt-5">
-        <!-- Seção de Serviços -->
-<section id="servicos" class="section">
+<!-- carrosel serviços Section -->
+<section id="carousel-servicos" class="py-5 bg-light">
     <div class="container">
-        <div class="row g-4">
-            <!-- DIV Limpeza de Colchões -->
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="text-center text-md-start">
-                    <h2 class="fw-bold text-primary">Limpeza de Colchões</h2>
-                    <p>Seu colchão pode parecer limpo, mas ao longo do tempo, ele acumula ácaros, poeira, suor e outras impurezas que podem prejudicar sua saúde e a qualidade do seu sono. Com a nossa higienização profissional, você e sua família terão noites muito mais tranquilas, livres de alergias e problemas respiratórios.</p>
-                    <p>Nossos especialistas utilizam técnicas avançadas para eliminar toda a sujeira invisível, garantindo um ambiente mais seguro, fresco e saudável. Agende agora mesmo a limpeza do seu colchão e sinta a diferença na sua rotina! 🛏️💙</p>
-                    <img src="imagem/limpeza-colchao.png" alt="Limpeza de Colchões" class="img-fluid rounded shadow-lg">
-                </div>
-            </div>
-            <!-- DIV Limpeza de Sofás -->
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="text-center text-md-start">
-                    <h2 class="fw-bold text-primary">Limpeza de Sofás</h2>
-                    <p>O sofá é um dos móveis mais usados da casa, mas também um dos que mais acumulam sujeira, poeira, ácaros e até bactérias. Isso pode afetar a qualidade do ar e causar alergias e problemas respiratórios.</p>
-                    <p>Com a nossa higienização profissional, removemos toda a sujeira profunda, manchas e odores, deixando seu sofá renovado, cheiroso e higienicamente seguro para sua família.</p>
-                    <p>Agende agora mesmo a limpeza do seu sofá e transforme o ambiente da sua casa! 🛋️💙</p>
-                    <img src="imagem/limpeza-sofá.jpg" alt="Limpeza de Sofás" class="img-fluid rounded shadow-lg">
-                </div>
-            </div>
-            <!-- DIV Limpeza de Tapetes -->
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="text-center text-md-start">
-                    <h2 class="fw-bold text-primary">Limpeza de Tapetes</h2>
-                    <p>Seus tapetes acumulam poeira, ácaros e sujeira ao longo do tempo, podendo causar alergias e comprometer a qualidade do ar da sua casa. Nossa higienização profissional remove impurezas profundas, elimina manchas e odores, restaurando a beleza e a maciez dos seus tapetes.</p>
-                    <p>Garanta um ambiente mais saudável e aconchegante para sua família! Agende agora mesmo a limpeza do seu tapete. 🏡✨</p>
-                    <img src="imagem/limpeza-tapete.jpg" alt="Limpeza de Tapetes" class="img-fluid rounded shadow-lg">
-                </div>
-            </div>
-            <!-- DIV Limpeza Automotiva -->
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="text-center text-md-start">
-                    <h2 class="fw-bold text-primary">Limpeza Automotiva</h2>
-                    <p>O interior do seu carro acumula poeira, ácaros, bactérias e até odores indesejáveis que podem afetar sua saúde e bem-estar. Com a nossa limpeza automotiva especializada, eliminamos sujeiras profundas dos bancos, carpetes e forros, removendo manchas e deixando seu veículo higienizado, cheiroso e renovado.</p>
-                    <p>Proporcione mais conforto e um ambiente mais saudável para você e sua família! Agende agora mesmo a higienização do seu carro. 🚗✨</p>
-                    <img src="imagem/limpeza-automotiva.jpg" alt="Limpeza Automotiva" class="img-fluid rounded shadow-lg">
-                </div>
-            </div>
-                <!-- DIV de impermeabilização -->
-            <div class="col-12 col-md-6 col-lg-6 mx-auto text-center">
-                <div class="text-center">
-                    <h2 class="fw-bold text-primary">Impermeabilização de Estofados</h2>
-                    <p>Derramou um líquido no sofá? Sem problemas! Com a nossa impermeabilização profissional, seus estofados ficam protegidos contra líquidos, sujeira e manchas, aumentando sua durabilidade e facilitando a limpeza no dia a dia.</p>
-                    <p>Utilizamos produtos de alta qualidade que criam uma barreira invisível sem alterar a textura ou a cor do tecido. Assim, seu sofá, colchão, cadeiras e até bancos de carro ficam sempre bonitos e bem cuidados por muito mais tempo.</p>
-                    <p>💙 Serviço de excelência: Nossa equipe é especializada e garante um atendimento ágil, eficiente e seguro. Cuidamos do seu conforto e da proteção dos seus móveis com o máximo de dedicação!</p>
+      <h2 class="text-center mb-4 text-primary display-5 fw-bold">Nossos Serviços</h2>
+      <div id="servicosCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-                        <p>Agende agora mesmo e proteja o que é seu! 🛋️🚗🛏️</p>
-                    <img src="imagem/Impermeabilização.png" alt="Impermeabilização" class="img-fluid rounded shadow-lg">
+          <div class="carousel-item active">
+            <div class="row justify-content-center gx-4">
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="imagem/limpeza-sofá.jpg" class="card-img-top" alt="Limpeza de Sofá">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Limpeza de Sofá</h5>
+                    <p class="card-text">Remoção completa de ácaros, manchas e odores.</p>
+                  </div>
                 </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="imagem/Impermeabilização.png" class="card-img-top" alt="Impermeabilização">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Impermeabilização</h5>
+                    <p class="card-text">Proteção contra líquidos e prolongamento da vida útil do tecido.</p>
+                  </div>
+                </div>
+                </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="imagem/limpeza-tapete.jpg" class="card-img-top" alt="Limpeza de Tapete">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Limpeza de Tapete</h5>
+                    <p class="card-text">Cores revitalizadas e livre de impurezas.</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center gx-4">
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="imagem/limpeza-automotiva.jpg" class="card-img-top" alt="Limpeza Automotiva">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Limpeza Automotiva</h5>
+                    <p class="card-text">Higienização interna e externa completa do veículo.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="imagem/limpeza-colchao.png" class="card-img-top" alt="Limpeza de Colchão">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Limpeza de Colchão</h5>
+                    <p class="card-text">Higienização profunda e proteção antibacteriana.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Adicione mais um card se quiser -->
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="imagem6.jpg" class="card-img-top" alt="Limpeza de Cortinas">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Limpeza de Cortinas</h5>
+                    <p class="card-text">Limpeza delicada e eficiente para tecidos finos e pesados.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
         </div>
+  
+        <!-- Setas -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#servicosCarousel" data-bs-slide="prev">
+          <span class="custom-arrow left-arrow" aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#servicosCarousel" data-bs-slide="next">
+          <span class="custom-arrow right-arrow" aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
     </div>
-</section>
-        <!-- Seção de Benefícios -->
-<section id="beneficios" class="section bg-light py-5">
-            <div class="container text-center">
-                <h2 class="fw-bold text-primary">Benefícios dos Nossos Serviços</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card shadow-sm p-4">
-                            <i class="bi bi-shield-check text-primary display-4"></i>
-                            <h4 class="mt-3">Saúde e Bem-estar</h4>
-                            <p>Eliminamos ácaros, fungos e bactérias, prevenindo alergias.</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm p-4">
-                            <i class="bi bi-brush text-primary display-4"></i>
-                            <h4 class="mt-3">Limpeza Profunda</h4>
-                            <p>Equipamentos modernos garantem um serviço impecável.</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm p-4">
-                            <i class="bi bi-clock-history text-primary display-4"></i>
-                            <h4 class="mt-3">Durabilidade</h4>
-                            <p>Prolongamos a vida útil dos seus estofados.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-</section>
-
+  </section>
+<!-- Seção porque nos escolher -->
 <section id="porque-nos-escolher" class="section">
     <div class="container text-center">
         <h2 class="fw-bold text-primary mb-5">Por que nos escolher?</h2>
@@ -161,11 +160,98 @@
         </div>
     </div>
 </section>
-
-
-    </main>
-
-
+<!-- Contatos Dicas e artigos -->
+<section id="artigos-dicas" class="py-5">
+    <div class="container">
+      <h2 class="text-center display-6 fw-bold mb-5 text-secondary">Artigos e Dicas</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 transition">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Como manter seu sofá sempre limpo</h5>
+                <p class="card-text">O acúmulo de poeira e sujeira pode comprometer a aparência e a durabilidade do seu estofado. Para evitar isso, aspire o sofá ao menos uma vez por semana, especialmente entre as almofadas. Evite comer ou beber sobre ele para prevenir manchas, e use panos úmidos com produtos neutros para limpezas rápidas e seguras.</p>
+              </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 transition">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Dicas caseiras para remover manchas</h5>
+                <p class="card-text">Manchas podem aparecer mesmo com todos os cuidados. Para manchas leves, uma solução de vinagre branco com bicarbonato de sódio pode ser eficaz. Aplique com um pano e não esfregue com força. Lembre-se: evite produtos abrasivos ou com álcool, que podem danificar o tecido. Em casos mais graves, procure uma limpeza profissional.</p>
+              </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 transition">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Precauções para maior durabilidade</h5>
+                <p class="card-text">Evite deixar seus estofados expostos ao sol direto por longos períodos, pois isso pode desbotar e ressecar o tecido. Tenha cuidado com objetos pontiagudos e animais de estimação. A impermeabilização é um ótimo investimento para proteger contra líquidos e sujeiras, prolongando a vida útil dos seus estofados e facilitando a limpeza no dia a dia.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Contatos -->
+  <section id="contato" class="py-5" style="background-color: #f1f8ff;">
+    <div class="container">
+      <h2 class="text-center mb-4" style="color: #0056b3; font-family: 'Poppins', sans-serif;">Entre em Contato</h2>
+      <p class="text-center mb-5 text-muted">Fale conosco pelas redes sociais ou envie sua mensagem diretamente pelo formulário.</p>
+  
+      <div class="row g-5">
+        <!-- Contatos Rápidos -->
+        <div class="col-md-5">
+          <div class="mb-4 p-4 shadow-sm bg-white rounded contact-box">
+            <i class="bi bi-envelope-fill fs-4 text-primary mb-2"></i>
+            <h6 class="fw-semibold">Email</h6>
+            <p class="text-muted">contato@seusite.com</p>
+          </div>
+          <div class="mb-4 p-4 shadow-sm bg-white rounded contact-box">
+            <i class="bi bi-whatsapp fs-4 text-success mb-2"></i>
+            <h6 class="fw-semibold">WhatsApp</h6>
+            <p class="text-muted">(<strong>31</strong>) 91234-5678</p>
+          </div>
+          <div class="mb-4 p-4 shadow-sm bg-white rounded contact-box">
+            <i class="bi bi-instagram fs-4 text-danger mb-2"></i>
+            <h6 class="fw-semibold">Instagram</h6>
+            <p><a href="https://instagram.com/seuinsta" target="_blank" class="text-decoration-none text-muted">@seuinsta</a></p>
+          </div>
+        </div>
+        <!-- Formulário -->
+        <div class="col-md-7">
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Seu nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Seu e-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone (opcional)</label>
+              <input type="tel" class="form-control" id="telefone" placeholder="(31) 91234-5678">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary px-4 rounded-pill">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 <strong>FD. Estofados</strong> — Todos os direitos reservados.</p>
+      <p class="mb-0" style="font-size: 0.9rem;">Desenvolvido com 💻 por <strong>Felipe Duarte</strong></p>
+    </div>
+  </footer>
     <script src="scriptsjs/script.js"></script>
 </body>
 </html>
