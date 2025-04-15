@@ -235,7 +235,93 @@ body {
 .hover-shadow:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);}
+/* Seção Antes e depois */
+#antes-depois {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
 
+#antes-depois h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Reutilizando estilos existentes */
+#antes-depois .img-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#antes-depois .img-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#antes-depois .img-container:hover img {
+    transform: scale(1.05);
+}
+
+#antes-depois .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#antes-depois .img-container:hover .overlay {
+    opacity: 1;
+}
+
+#antes-depois .overlay p {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Ajustes para os botões do carrossel */
+#antes-depois .carousel-control-prev,
+#antes-depois .carousel-control-next {
+    width: auto;
+}
+
+#antes-depois .custom-arrow {
+    font-size: 2.5rem;
+    color: #007bff;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#antes-depois .custom-arrow:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+#antes-depois .left-arrow {
+    margin-left: -50px;
+}
+
+#antes-depois .right-arrow {
+    margin-right: -50px;
+}
   /* Seção Dicas e artigos */
   #artigos-dicas .card {
     transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
@@ -291,4 +377,13 @@ body {
 
     #porque-nos-escolher .row {
         flex-direction: column;}
-}
+
+        #antes-depois .left-arrow,
+        #antes-depois .right-arrow {
+            margin: 0;
+        }
+    
+        #antes-depois .img-container {
+            margin-bottom: 20px;
+        }
+    }
