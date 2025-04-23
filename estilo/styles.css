@@ -1,12 +1,12 @@
-@charset "UTF 8";
+@charset "UTF-8";
 /* Estilos Globais */
 body {
     background-color: #e3f2fd;
     color: #333;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;}
-
+    padding: 0;
+}
 /* Navbar */
 .navbar {
     background-color: #ffffff;
@@ -37,7 +37,7 @@ body {
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;}
-    
+
 .navbar-nav .nav-link:not(.contato-link):hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;}
@@ -53,7 +53,7 @@ body {
 .navbar-nav .contato-link:hover {
     background-color: #25d366;
     color: #fff !important;}
-    
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -88,13 +88,13 @@ body {
     letter-spacing: 2px;
     color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    animation: fadeIn 2s ease-out forward;}
+    animation: fadeIn 2s ease-out forwards;}
 
 .hero p {
     font-size: 1.25rem;
     margin-bottom: 30px;
     color: #f8f9fa;
-    animation: fadeIn 3s ease-out forward;
+    animation: fadeIn 3s ease-out forwards;
     opacity: 1 !important;
     animation-delay: 1s;
     animation-fill-mode: forwards;}
@@ -231,43 +231,38 @@ body {
 
 .hover-shadow {
     transition: all 0.3s ease-in-out;}
-  
+
 .hover-shadow:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);}
+
 /* Seção Antes e depois */
 #antes-depois {
     background-color: #f8f9fa;
     padding: 80px 0;
-    text-align: center;
-}
+    text-align: center;}
 
 #antes-depois h2 {
     font-size: 2.5rem;
     color: #007bff;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    margin-bottom: 50px;
-}
+    margin-bottom: 50px;}
 
-/* Reutilizando estilos existentes */
 #antes-depois .img-container {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
+    transition: transform 0.3s ease-in-out;}
 
 #antes-depois .img-container img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease-in-out;
-}
+    transition: transform 0.3s ease-in-out;}
 
 #antes-depois .img-container:hover img {
-    transform: scale(1.05);
-}
+    transform: scale(1.05);}
 
 #antes-depois .overlay {
     position: absolute;
@@ -280,25 +275,21 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
-}
+    transition: opacity 0.3s ease;}
 
 #antes-depois .img-container:hover .overlay {
-    opacity: 1;
-}
+    opacity: 1;}
 
 #antes-depois .overlay p {
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
-    text-transform: uppercase;
-}
+    text-transform: uppercase;}
 
 /* Ajustes para os botões do carrossel */
 #antes-depois .carousel-control-prev,
 #antes-depois .carousel-control-next {
-    width: auto;
-}
+    width: auto;}
 
 #antes-depois .custom-arrow {
     font-size: 2.5rem;
@@ -307,83 +298,99 @@ body {
     border-radius: 50%;
     padding: 5px 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-}
+    transition: all 0.3s ease-in-out;}
 
 #antes-depois .custom-arrow:hover {
     background-color: #0056b3;
-    color: #fff;
-}
+    color: #fff;}
 
 #antes-depois .left-arrow {
-    margin-left: -50px;
-}
+    margin-left: -50px;}
 
 #antes-depois .right-arrow {
-    margin-right: -50px;
-}
-  /* Seção Dicas e artigos */
-  #artigos-dicas .card {
+    margin-right: -50px;}
+
+/* Seção Dicas e artigos */
+#artigos-dicas .card {
     transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
     height: 100%;
     border-radius: 12px;
     border: 2px solid transparent;
     background-color: #ffffff;}
-  
-  #artigos-dicas .card:hover {
+
+#artigos-dicas .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(0, 123, 255, 0.2);
     border-color: #007bff;}
-  
-  #artigos-dicas a.text-decoration-none {
+
+#artigos-dicas a.text-decoration-none {
     text-decoration: none !important;
     color: inherit;
     display: block;
     height: 100%;}
-  
-  #artigos-dicas .card-title,
-  #artigos-dicas .card-text {
+
+#artigos-dicas .card-title,
+#artigos-dicas .card-text {
     transition: color 0.3s ease;}
-  
-  #artigos-dicas a:hover .card-title {
+
+#artigos-dicas a:hover .card-title {
     color: #0056b3;}
 
-  .contact-box {
+.contact-box {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 4px solid #007bff;}
-  
-  .contact-box:hover {
+
+.contact-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 123, 255, 0.15);}
 
 /* footer */
-  footer p {
+footer p {
     margin: 0;
     letter-spacing: 0.5px;}
 
-    /* Resposive */
+/* Responsive */
 @media (max-width: 768px) {
+
+    .navbar-nav .nav-link.contato-link {
+        border: none !important;
+    }
+
+    .navbar-nav .nav-link.contato-link:after {
+        content: none !important;
+    }
+
+    .hero {
+        height: 100vh;
+        padding: 20px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .hero a {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
 
     .left-arrow,
     .right-arrow {
-        margin: 0;}
+        margin: 0;
+    }
 
     #carousel-servicos .carousel-inner .row {
-        flex-direction: column;}
+        flex-direction: column;
+    }
 
     #carousel-servicos .col-md-4 {
         max-width: 100%;
-        margin-bottom: 20px;}
-
-    #porque-nos-escolher .row {
-        flex-direction: column;}
-
-        #antes-depois .left-arrow,
-        #antes-depois .right-arrow {
-            margin: 0;
-        }
-    
-        #antes-depois .img-container {
-            margin-bottom: 20px;
-        }
+        margin-bottom: 20px;
     }
+}
