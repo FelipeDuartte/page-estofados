@@ -119,41 +119,55 @@ body {
 .section:last-child {
     border-bottom: none;}
 
-#carousel-servicos .card {
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;}
+#carousel-servicos .carousel-inner {
+    padding: 20px 0;}
 
-#carousel-servicos .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);}
+.card-wrapper {
+    width: 30%;
+    min-width: 280px;
+    padding: 0 5px;}
 
-#carousel-servicos .card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 3px solid #339af0;}
+#carousel-servicos .carousel-control-prev,
+#carousel-servicos .carousel-control-next {
+    width: 50px;
+    opacity: 1;}
 
-.custom-arrow {
-    font-size: 2.5rem;
-    color: #007bff;
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 5px 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;}
+    .btn-agendar {
+        background-color: #0d6efd;
+        border: none;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;}
+    
+    .btn-agendar:hover {
+        background-color: #0b5ed7;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);}
+    
+    .btn-agendar:active {
+        transform: translateY(0);}
 
-.custom-arrow:hover {
-    background-color: #0056b3;
-    color: #fff;}
-
-.left-arrow {
-    margin-left: -50px;}
-
-.right-arrow {
-    margin-right: -50px;}
+@keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }}
+    
+    .pulse-animation {
+        animation: pulse 2s infinite;}
+    
+    /* Efeito de clique */
+    @keyframes click-effect {
+        0% { transform: scale(1); }
+        50% { transform: scale(0.95); }
+        100% { transform: scale(1); }}
+    
+    .click-animation {
+        animation: click-effect 0.3s ease-out;}
 
 /* Seção Por que nos escolher */
+
 #porque-nos-escolher {
     background-color: #FF6F61;
     padding: 80px 0;
@@ -286,6 +300,29 @@ body {
     font-weight: bold;
     text-transform: uppercase;}
 
+    .btn-instagram {
+        background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        display: inline-flex;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-decoration: none;}
+    
+    .btn-instagram:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        background: linear-gradient(45deg, #E1306C, #C13584, #833AB4, #5851DB, #405DE6);}
+    
+    .btn-instagram:active {
+        transform: translateY(0); }
+    
+    .instagram-cta {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;}
 /* Ajustes para os botões do carrossel */
 #antes-depois .carousel-control-prev,
 #antes-depois .carousel-control-next {
@@ -352,12 +389,26 @@ footer p {
 /* Responsive */
 @media (max-width: 768px) {
 
+.section {
+        padding: 50px 0;
+    }
+
+.navbar-nav {
+        padding-top: 15px;}
+
+    .navbar-nav .nav-link {
+        padding: 8px 0;}
+
+    .navbar-nav .contato-link {
+        display: inline-block;
+        margin-top: 10px;}
+
     .navbar-nav .nav-link.contato-link {
-        border: none !important;
+        border: none ;
     }
 
     .navbar-nav .nav-link.contato-link:after {
-        content: none !important;
+        content: none ;
     }
 
     .hero {
@@ -380,17 +431,63 @@ footer p {
         padding: 12px 30px;
     }
 
-    .left-arrow,
-    .right-arrow {
+ .card-wrapper {
+        width: 85%;
+        min-width: 220px;
+    }
+    
+    #carousel-servicos .carousel-control-prev {
+        left: -15px;
+    }
+    
+    #carousel-servicos .carousel-control-next {
+        right: -15px;
+    }
+    
+ #porque-nos-escolher .row {
+        flex-direction: column;
+    }
+    #porque-nos-escolher .col-lg-6 {
+        width: 100%;
+    }
+    #porque-nos-escolher .img-container {
+        margin-top: 30px;
+    }
+
+
+     #carouselAntesDepois .carousel-control-prev,
+    #carouselAntesDepois .carousel-control-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background: rgba(255,255,255,0.8);
+        border-radius: 50%;
         margin: 0;
     }
 
-    #carousel-servicos .carousel-inner .row {
-        flex-direction: column;
+    #carouselAntesDepois .carousel-control-prev {
+        left: 5px;
     }
 
-    #carousel-servicos .col-md-4 {
-        max-width: 100%;
-        margin-bottom: 20px;
+    #carouselAntesDepois .carousel-control-next {
+        right: 5px;
+    }
+
+    #carouselAntesDepois .left-arrow,
+    #carouselAntesDepois .right-arrow {
+        margin: 0 !important;
+    }
+
+     #contato .row {
+        flex-direction: column-reverse;
+    }
+    #contato .col-md-5, 
+    #contato .col-md-7 {
+        width: 100%;
+    }
+    #contato .contact-box {
+        margin-bottom: 15px;
     }
 }

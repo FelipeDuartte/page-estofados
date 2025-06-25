@@ -58,3 +58,33 @@ const phrases = [
     
     typeWriter();
   };
+
+document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.querySelector('.btn-agendar');
+        
+        btn.classList.add('pulse-animation');
+        
+        
+        btn.addEventListener('click', function() {
+        
+            btn.classList.remove('pulse-animation');
+            
+            btn.classList.add('click-animation');
+            
+            setTimeout(() => {
+                btn.classList.remove('click-animation');
+                btn.classList.add('pulse-animation');
+            }, 300);
+      
+            console.log('Botão clicado!');
+        });
+        
+        const icon = btn.querySelector('i');
+        btn.addEventListener('mouseenter', () => {
+            icon.style.transform = 'rotate(-10deg)';
+        });
+        
+        btn.addEventListener('mouseleave', () => {
+            icon.style.transform = 'rotate(0)';
+        });
+    });
