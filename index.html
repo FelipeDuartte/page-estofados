@@ -31,104 +31,70 @@
             </div>
         </div>
     </nav>  
-    <!-- Principal Section -->
-    <section class="hero d-flex align-items-center justify-content-center text-center">
+   <!-- Seção HERO--> <section class="hero d-flex align-items-center justify-content-center text-center">
         <div class="container">
             <h1 class="display-4 fw-bold text-white">Transforme seu ambiente com limpeza de qualidade!</h1>
             <p class="lead text-white mb-4" id="typewriter-text">Garantimos sofás, colchões, tapetes, estofados automotivos impecáveis, protegidos e com impermeabilização de alta qualidade!</p>
             <a href="http://127.0.0.1:5500/agendamento.html" target="_blank" class="btn text-white btn-lg"><i class="bi bi-calendar-check ms-2"></i> Clique para Agendar</a>
         </div>
     </section>
-    <!-- carrosel serviços Section -->
-    <section id="carousel-servicos" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4 text-primary display-5 fw-bold">Nossos Serviços</h2>
-        
-        <div id="servicosCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center">
-                        <div class="card-wrapper">
-                            <div class="card shadow-sm mx-2">
-                                <img src="imagem/limpeza-sofá.jpg" class="card-img-top" alt="Limpeza de Sofá">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Sofás</h5>
-                                    <p class="card-text">Remoção completa de ácaros, manchas e odores.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card-wrapper">
-                            <div class="card shadow-sm mx-2">
-                                <img src="imagem/Impermeabilização.png" class="card-img-top" alt="Impermeabilização">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Impermeabilização</h5>
-                                    <p class="card-text">Proteção contra líquidos e prolongamento da vida útil do tecido.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card-wrapper">
-                            <div class="card shadow-sm mx-2">
-                                <img src="imagem/limpeza-tapete.jpg" class="card-img-top" alt="Limpeza de Tapete">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Tapetes</h5>
-                                    <p class="card-text">Cores revitalizadas e livre de impurezas.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+   <!-- Seção serviços--><section class="servicos-carousel-section bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-primary display-5 fw-bold">Nossos Serviços</h2>
 
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="card-wrapper">
-                            <div class="card shadow-sm mx-2">
-                                <img src="imagem/limpeza-automotiva.jpg" class="card-img-top" alt="Limpeza Automotiva">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Limpeza Automotiva</h5>
-                                    <p class="card-text">Higienização interna completa do veículo.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card-wrapper">
-                            <div class="card shadow-sm mx-2">
-                                <img src="imagem/cadeira.jpg" class="card-img-top" alt="Cadeiras">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Cadeiras</h5>
-                                    <p class="card-text">Remoção completa de ácaros, manchas e odores.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card-wrapper">
-                            <div class="card shadow-sm mx-2">
-                                <img src="imagem/limpeza-colchao.png" class="card-img-top" alt="Limpeza de Colchão">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Colchões</h5>
-                                    <p class="card-text">Higienização profunda e proteção antibacteriana, e Remoção de manchas.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="carousel-container position-relative">
+      <!-- Botões -->
+      <button class="carousel-btn left"><i class="bi bi-chevron-left"></i></button>
+      <button class="carousel-btn right"><i class="bi bi-chevron-right"></i></button>
 
-            <!-- Setas otimizadas -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#servicosCarousel" data-bs-slide="prev">
-                <i class="bi bi-chevron-left fs-1 text-primary"></i>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#servicosCarousel" data-bs-slide="next">
-                <i class="bi bi-chevron-right fs-1 text-primary"></i>
-                <span class="visually-hidden">Próximo</span>
-            </button>
+      <!-- Área de rolagem -->
+      <div class="carousel-track d-flex">
+        <!-- Card 1 -->
+        <div class="card-servico">
+          <img src="imagem/limpeza-sofá.jpg" alt="Sofás">
+          <h5>Sofás</h5>
+          <p>Remoção completa de ácaros, manchas e odores.</p>
         </div>
 
-        <div class="text-center mt-4">
+        <!-- Card 2 -->
+        <div class="card-servico">
+          <img src="imagem/Impermeabilização.png" alt="Impermeabilização">
+          <h5>Impermeabilização</h5>
+          <p>Proteção contra líquidos e aumento da durabilidade.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-servico">
+          <img src="imagem/limpeza-tapete.jpg" alt="Tapetes">
+          <h5>Tapetes</h5>
+          <p>Cores revitalizadas e livre de impurezas.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card-servico">
+          <img src="imagem/limpeza-automotiva.jpg" alt="Automotiva">
+          <h5>Limpeza Automotiva</h5>
+          <p>Higienização interna completa do veículo.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card-servico">
+          <img src="imagem/cadeira.jpg" alt="Cadeiras">
+          <h5>Cadeiras</h5>
+          <p>Remoção de ácaros, manchas e odores.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card-servico">
+          <img src="imagem/limpeza-colchao.png" alt="Colchão">
+          <h5>Colchões</h5>
+          <p>Higienização profunda e proteção antibacteriana.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão de agendamento -->
+    <div class="text-center mt-4">
             <a href="http://127.0.0.1:5500/agendamento.html" target="_blank">
                 <button class="btn-agendar btn btn-primary btn-lg fw-bold px-5 py-4">
                     Clique para agendar

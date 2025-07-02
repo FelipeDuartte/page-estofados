@@ -88,3 +88,16 @@ document.addEventListener('DOMContentLoaded', function() {
             icon.style.transform = 'rotate(0)';
         });
     });
+const track = document.querySelector('.carousel-track');
+  const btnLeft = document.querySelector('.carousel-btn.left');
+  const btnRight = document.querySelector('.carousel-btn.right');
+
+  const scrollAmount = 300;
+
+  btnLeft.addEventListener('click', () => {
+    track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  btnRight.addEventListener('click', () => {
+    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
