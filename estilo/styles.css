@@ -530,7 +530,7 @@ footer p {
 
      #contato .row {
         flex-direction: column-reverse;
-    max-width: 100vw;}
+    max-width: 100vw ;}
     #contato .col-md-5, 
     #contato .col-md-7 {
         width: 100%;
