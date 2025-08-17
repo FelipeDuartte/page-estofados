@@ -371,29 +371,6 @@ max-width: 100vw;}
         padding: 20px;
         background-color: #f8f9fa;
         border-radius: 10px;}
-/* Ajustes para os botões do carrossel */
-#antes-depois .carousel-control-prev,
-#antes-depois .carousel-control-next {
-    width: auto;}
-
-#antes-depois .custom-arrow {
-    font-size: 2.5rem;
-    color: #007bff;
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 5px 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;}
-
-#antes-depois .custom-arrow:hover {
-    background-color: #0056b3;
-    color: #fff;}
-
-#antes-depois .left-arrow {
-    margin-left: -50px;}
-
-#antes-depois .right-arrow {
-    margin-right: -50px;}
 
 /* Seção Dicas e artigos */
 #artigos-dicas .card {
@@ -500,32 +477,6 @@ footer p {
     }
     #porque-nos-escolher .img-container {
         margin-top: 30px;
-    }
-
-
-     #carouselAntesDepois .carousel-control-prev,
-    #carouselAntesDepois .carousel-control-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        background: rgba(255,255,255,0.8);
-        border-radius: 50%;
-        margin: 0;
-    }
-
-    #carouselAntesDepois .carousel-control-prev {
-        left: 5px;
-    }
-
-    #carouselAntesDepois .carousel-control-next {
-        right: 5px;
-    }
-
-    #carouselAntesDepois .left-arrow,
-    #carouselAntesDepois .right-arrow {
-        margin: 0;
     }
 
      #contato .row {
